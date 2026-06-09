@@ -36,13 +36,10 @@ pipeline {
         stage('Start MySQL') {
             steps {
                 bat '''
-                docker rm -f %MYSQL_CONT% >nul 2>&1
-
-                docker run -d --name %MYSQL_CONT% --network %NETWORK% ^
-                -e MYSQL_ROOT_PASSWORD=%MYSQL_PWD% ^
-                -e MYSQL_DATABASE=%MYSQL_DB% ^
-                -p 3306:3306 ^
-                mysql:8.0
+               docker run -d --name %MYSQL_CONT% --network %NETWORK% ^
+-e MYSQL_ROOT_PASSWORD=%MYSQL_PWD% ^
+-e MYSQL_DATABASE=%MYSQL_DB% ^
+mysql:8.0
                 '''
             }
         }
