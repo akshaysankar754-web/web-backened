@@ -44,11 +44,11 @@ mysql:8.0
             }
         }
 
-        stage('Wait For MySQL') {
-            steps {
-                bat 'timeout /t 30'
-            }
-        }
+    stage('Wait For MySQL') {
+    steps {
+        bat 'ping 127.0.0.1 -n 31 > nul'
+    }
+}
 
         stage('Run API') {
             steps {
