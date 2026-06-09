@@ -1,0 +1,10 @@
+MSBuild version 17.9.8+b34f75857 for .NET
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  InternshipPortalApi -> c:\Users\akshay.sankar\InternshipPortalApi\bin\Debug\net8.0\InternshipPortalApi.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:06.21
